@@ -1,0 +1,80 @@
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* Slightly darker, more contrasty background */
+  background: radial-gradient(circle at top left, #dbeafe 0, #e5e7eb 45%, #f3f4f6 90%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.mono-prewrap {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.transcript-text {
+  font-family: "Times New Roman", "Times", serif;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.glass-panel {
+  /* Darker, cooler glass tone similar to tiles but still light */
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.96), rgba(226, 232, 240, 0.96));
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+}
+
+.app-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.magic-action-card:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+
+
+.transcript-container {
+  font-family: "Helvetica", "Arial", sans-serif; /* Use Helvetica */
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.transcript-segment {
+  font-size: 14px;
+  font-weight: normal;
+  transition: all 0.3s ease;
+  margin-right: 4px;
+}
+
+.transcript-latest {
+  font-weight: bold;
+  font-size: 16px; /* One size bigger than 14px */
+  color: #000;
+}
+
+/* Update the existing transcript-text class if you still use it elsewhere */
+.transcript-text {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
