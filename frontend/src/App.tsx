@@ -42,8 +42,9 @@ export default function App() {
 
   const pollTimer = useRef<number | null>(null);
   const prevEmpathyRef = useRef<string>("");
-  const API_URL = "https://ai-interview-assistant-backend-web-render.onrender.com"; // DEPLOYMENT: Change to your Render URL
+  const API_URL = "https://ai-interview-assistant-ttpn.onrender.com"; // DEPLOYMENT: Change to your Render URL
   // const API_URL = "http://localhost:8000";
+
 
   // --- STYLING ---
   const glassStyle: React.CSSProperties = {
